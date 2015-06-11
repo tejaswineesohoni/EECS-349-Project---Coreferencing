@@ -1,0 +1,308 @@
+@relation coref_dataset_final
+
+@attribute 'Phrase 1' {'the city',Chicago,Its,It,'the seat of Cook County','the third most populous city in the United States',Chicagoland,third,'the United States','Its metropolitan area'}
+@attribute 'Phrase 2' {Chicago,Its,It,'the seat of Cook County','the third most populous city in the United States',Chicagoland,'the city',third,'the United States','Its metropolitan area','Cook County','DuPage County','a small part of the city','a city in 1837',1837.0,'an alpha + global city','an alpha','Second City','The best-known nicknames for the city','Windy City and Second City','Windy City','the fastest growing city in the world for several decades','The City of Chicago','the world for several decades','several decades'}
+@attribute 'Sentence 1' numeric
+@attribute 'Sentence 2' numeric
+@attribute 'Chain 1' numeric
+@attribute 'Chain 2' numeric
+@attribute 'Same Sentence' {FALSE,TRUE}
+@attribute 'Same Chain' {TRUE,FALSE}
+@attribute 'Size of Chain' numeric
+@attribute Result {Y,N}
+
+@data
+'the city',Chicago,3,1,1,1,FALSE,TRUE,11,Y
+'the city',Its,3,2,1,1,FALSE,TRUE,11,Y
+'the city',Chicago,3,3,1,1,TRUE,TRUE,11,Y
+'the city',It,3,4,1,1,FALSE,TRUE,11,Y
+'the city',Chicago,3,5,1,1,FALSE,TRUE,11,Y
+'the city','the seat of Cook County',3,3,1,1,TRUE,TRUE,11,Y
+'the city','the third most populous city in the United States',3,1,1,1,FALSE,TRUE,11,Y
+'the city',Chicagoland,3,2,1,1,FALSE,TRUE,11,Y
+'the city',Chicago,3,7,1,1,FALSE,TRUE,11,Y
+'the city','the city',3,6,1,1,FALSE,TRUE,11,Y
+'the city',third,3,1,1,2,FALSE,FALSE,0,Y
+'the city','the United States',3,1,1,4,FALSE,FALSE,0,Y
+'the city','Its metropolitan area',3,2,1,6,FALSE,FALSE,0,Y
+'the city','Cook County',3,3,1,9,TRUE,FALSE,0,Y
+'the city','DuPage County',3,3,1,10,TRUE,FALSE,0,Y
+'the city','a small part of the city',3,3,1,12,TRUE,FALSE,0,N
+'the city','a city in 1837',3,4,1,15,FALSE,FALSE,0,N
+'the city',1837.0,3,4,1,16,FALSE,FALSE,0,Y
+'the city','an alpha + global city',3,5,1,18,FALSE,FALSE,0,N
+'the city','an alpha',3,5,1,19,FALSE,FALSE,0,N
+'the city','Second City',3,6,1,20,FALSE,FALSE,0,N
+'the city','The best-known nicknames for the city',3,6,1,21,FALSE,FALSE,0,Y
+'the city','Windy City and Second City',3,6,1,23,FALSE,FALSE,0,N
+'the city','Windy City',3,6,1,24,FALSE,FALSE,0,N
+'the city','the fastest growing city in the world for several decades',3,7,1,26,FALSE,FALSE,0,N
+'the city','The City of Chicago',3,7,1,26,FALSE,FALSE,0,N
+'the city','the world for several decades',3,7,1,28,FALSE,FALSE,0,N
+'the city','several decades',3,7,1,29,FALSE,FALSE,0,N
+Chicago,Its,1,2,1,1,FALSE,TRUE,11,Y
+Chicago,Chicago,1,3,1,1,FALSE,TRUE,11,Y
+Chicago,It,1,4,1,1,FALSE,TRUE,11,Y
+Chicago,Chicago,1,5,1,1,FALSE,TRUE,11,Y
+Chicago,'the seat of Cook County',1,3,1,1,FALSE,TRUE,11,Y
+Chicago,'the third most populous city in the United States',1,1,1,1,TRUE,TRUE,11,Y
+Chicago,Chicagoland,1,2,1,1,FALSE,TRUE,11,Y
+Chicago,Chicago,1,7,1,1,FALSE,TRUE,11,Y
+Chicago,'the city',1,6,1,1,FALSE,TRUE,11,Y
+Chicago,third,1,1,1,2,TRUE,FALSE,0,Y
+Chicago,'the United States',1,1,1,4,TRUE,FALSE,0,Y
+Chicago,'Its metropolitan area',1,2,1,6,FALSE,FALSE,0,N
+Chicago,'Cook County',1,3,1,9,FALSE,FALSE,0,Y
+Chicago,'DuPage County',1,3,1,10,FALSE,FALSE,0,Y
+Chicago,'a small part of the city',1,3,1,12,FALSE,FALSE,0,N
+Chicago,'a city in 1837',1,4,1,15,FALSE,FALSE,0,N
+Chicago,1837.0,1,4,1,16,FALSE,FALSE,0,Y
+Chicago,'an alpha + global city',1,5,1,18,FALSE,FALSE,0,N
+Chicago,'an alpha',1,5,1,19,FALSE,FALSE,0,Y
+Chicago,'Second City',1,6,1,20,FALSE,FALSE,0,N
+Chicago,'The best-known nicknames for the city',1,6,1,21,FALSE,FALSE,0,Y
+Chicago,'Windy City and Second City',1,6,1,23,FALSE,FALSE,0,N
+Chicago,'Windy City',1,6,1,24,FALSE,FALSE,0,N
+Chicago,'the fastest growing city in the world for several decades',1,7,1,26,FALSE,FALSE,0,N
+Chicago,'The City of Chicago',1,7,1,26,FALSE,FALSE,0,N
+Chicago,'the world for several decades',1,7,1,28,FALSE,FALSE,0,Y
+Chicago,'several decades',1,7,1,29,FALSE,FALSE,0,Y
+Its,Chicago,2,3,1,1,FALSE,TRUE,11,Y
+Its,It,2,4,1,1,FALSE,TRUE,11,Y
+Its,Chicago,2,5,1,1,FALSE,TRUE,11,Y
+Its,'the seat of Cook County',2,3,1,1,FALSE,TRUE,11,Y
+Its,'the third most populous city in the United States',2,1,1,1,FALSE,TRUE,11,Y
+Its,Chicagoland,2,2,1,1,TRUE,TRUE,11,Y
+Its,Chicago,2,7,1,1,FALSE,TRUE,11,Y
+Its,'the city',2,6,1,1,FALSE,TRUE,11,Y
+Its,third,2,1,1,2,FALSE,FALSE,0,Y
+Its,'the United States',2,1,1,4,FALSE,FALSE,0,Y
+Its,'Its metropolitan area',2,2,1,6,TRUE,FALSE,0,Y
+Its,'Cook County',2,3,1,9,FALSE,FALSE,0,Y
+Its,'DuPage County',2,3,1,10,FALSE,FALSE,0,Y
+Its,'a small part of the city',2,3,1,12,FALSE,FALSE,0,N
+Its,'a city in 1837',2,4,1,15,FALSE,FALSE,0,N
+Its,1837.0,2,4,1,16,FALSE,FALSE,0,Y
+Its,'an alpha + global city',2,5,1,18,FALSE,FALSE,0,N
+Its,'an alpha',2,5,1,19,FALSE,FALSE,0,N
+Its,'Second City',2,6,1,20,FALSE,FALSE,0,N
+Its,'The best-known nicknames for the city',2,6,1,21,FALSE,FALSE,0,Y
+Its,'Windy City and Second City',2,6,1,23,FALSE,FALSE,0,N
+Its,'Windy City',2,6,1,24,FALSE,FALSE,0,N
+Its,'the fastest growing city in the world for several decades',2,7,1,26,FALSE,FALSE,0,N
+Its,'The City of Chicago',2,7,1,26,FALSE,FALSE,0,N
+Its,'the world for several decades',2,7,1,28,FALSE,FALSE,0,Y
+Its,'several decades',2,7,1,29,FALSE,FALSE,0,Y
+Chicago,It,3,4,1,1,FALSE,TRUE,11,Y
+Chicago,Chicago,3,5,1,1,FALSE,TRUE,11,Y
+Chicago,'the seat of Cook County',3,3,1,1,TRUE,TRUE,11,Y
+Chicago,'the third most populous city in the United States',3,1,1,1,FALSE,TRUE,11,Y
+Chicago,Chicagoland,3,2,1,1,FALSE,TRUE,11,Y
+Chicago,Chicago,3,7,1,1,FALSE,TRUE,11,Y
+Chicago,'the city',3,6,1,1,FALSE,TRUE,11,Y
+Chicago,third,3,1,1,2,FALSE,FALSE,0,Y
+Chicago,'the United States',3,1,1,4,FALSE,FALSE,0,Y
+Chicago,'Its metropolitan area',3,2,1,6,FALSE,FALSE,0,N
+Chicago,'Cook County',3,3,1,9,TRUE,FALSE,0,Y
+Chicago,'DuPage County',3,3,1,10,TRUE,FALSE,0,Y
+Chicago,'a small part of the city',3,3,1,12,TRUE,FALSE,0,N
+Chicago,'a city in 1837',3,4,1,15,FALSE,FALSE,0,N
+Chicago,1837.0,3,4,1,16,FALSE,FALSE,0,Y
+Chicago,'an alpha + global city',3,5,1,18,FALSE,FALSE,0,N
+Chicago,'an alpha',3,5,1,19,FALSE,FALSE,0,Y
+Chicago,'Second City',3,6,1,20,FALSE,FALSE,0,N
+Chicago,'The best-known nicknames for the city',3,6,1,21,FALSE,FALSE,0,Y
+Chicago,'Windy City and Second City',3,6,1,23,FALSE,FALSE,0,N
+Chicago,'Windy City',3,6,1,24,FALSE,FALSE,0,N
+Chicago,'the fastest growing city in the world for several decades',3,7,1,26,FALSE,FALSE,0,N
+Chicago,'The City of Chicago',3,7,1,26,FALSE,FALSE,0,N
+Chicago,'the world for several decades',3,7,1,28,FALSE,FALSE,0,N
+Chicago,'several decades',3,7,1,29,FALSE,FALSE,0,N
+It,Chicago,4,5,1,1,FALSE,TRUE,11,Y
+It,'the seat of Cook County',4,3,1,1,FALSE,TRUE,11,Y
+It,'the third most populous city in the United States',4,1,1,1,FALSE,TRUE,11,Y
+It,Chicagoland,4,2,1,1,FALSE,TRUE,11,Y
+It,Chicago,4,7,1,1,FALSE,TRUE,11,Y
+It,'the city',4,6,1,1,FALSE,TRUE,11,Y
+It,third,4,1,1,2,FALSE,FALSE,0,Y
+It,'the United States',4,1,1,4,FALSE,FALSE,0,Y
+It,'Its metropolitan area',4,2,1,6,FALSE,FALSE,0,N
+It,'Cook County',4,3,1,9,FALSE,FALSE,0,Y
+It,'DuPage County',4,3,1,10,FALSE,FALSE,0,Y
+It,'a small part of the city',4,3,1,12,FALSE,FALSE,0,N
+It,'a city in 1837',4,4,1,15,TRUE,FALSE,0,N
+It,1837.0,4,4,1,16,TRUE,FALSE,0,Y
+It,'an alpha + global city',4,5,1,18,FALSE,FALSE,0,N
+It,'an alpha',4,5,1,19,FALSE,FALSE,0,Y
+It,'Second City',4,6,1,20,FALSE,FALSE,0,N
+It,'The best-known nicknames for the city',4,6,1,21,FALSE,FALSE,0,Y
+It,'Windy City and Second City',4,6,1,23,FALSE,FALSE,0,N
+It,'Windy City',4,6,1,24,FALSE,FALSE,0,N
+It,'the fastest growing city in the world for several decades',4,7,1,26,FALSE,FALSE,0,N
+It,'The City of Chicago',4,7,1,26,FALSE,FALSE,0,N
+It,'the world for several decades',4,7,1,28,FALSE,FALSE,0,Y
+It,'several decades',4,7,1,29,FALSE,FALSE,0,Y
+Chicago,'the seat of Cook County',5,3,1,1,FALSE,TRUE,11,Y
+Chicago,'the third most populous city in the United States',5,1,1,1,FALSE,TRUE,11,Y
+Chicago,Chicagoland,5,2,1,1,FALSE,TRUE,11,Y
+Chicago,Chicago,5,7,1,1,FALSE,TRUE,11,Y
+Chicago,'the city',5,6,1,1,FALSE,TRUE,11,Y
+Chicago,third,5,1,1,2,FALSE,FALSE,0,Y
+Chicago,'the United States',5,1,1,4,FALSE,FALSE,0,Y
+Chicago,'Its metropolitan area',5,2,1,6,FALSE,FALSE,0,Y
+Chicago,'Cook County',5,3,1,9,FALSE,FALSE,0,Y
+Chicago,'DuPage County',5,3,1,10,FALSE,FALSE,0,Y
+Chicago,'a small part of the city',5,3,1,12,FALSE,FALSE,0,N
+Chicago,'a city in 1837',5,4,1,15,FALSE,FALSE,0,N
+Chicago,1837.0,5,4,1,16,FALSE,FALSE,0,Y
+Chicago,'an alpha + global city',5,5,1,18,TRUE,FALSE,0,N
+Chicago,'an alpha',5,5,1,19,TRUE,FALSE,0,Y
+Chicago,'Second City',5,6,1,20,FALSE,FALSE,0,N
+Chicago,'The best-known nicknames for the city',5,6,1,21,FALSE,FALSE,0,Y
+Chicago,'Windy City and Second City',5,6,1,23,FALSE,FALSE,0,N
+Chicago,'Windy City',5,6,1,24,FALSE,FALSE,0,N
+Chicago,'the fastest growing city in the world for several decades',5,7,1,26,FALSE,FALSE,0,N
+Chicago,'The City of Chicago',5,7,1,26,FALSE,FALSE,0,N
+Chicago,'the world for several decades',5,7,1,28,FALSE,FALSE,0,N
+Chicago,'several decades',5,7,1,29,FALSE,FALSE,0,N
+'the seat of Cook County','the third most populous city in the United States',3,1,1,1,FALSE,TRUE,11,Y
+'the seat of Cook County',Chicagoland,3,2,1,1,FALSE,TRUE,11,Y
+'the seat of Cook County',Chicago,3,7,1,1,FALSE,TRUE,11,Y
+'the seat of Cook County','the city',3,6,1,1,FALSE,TRUE,11,Y
+'the seat of Cook County',third,3,1,1,2,FALSE,FALSE,0,Y
+'the seat of Cook County','the United States',3,1,1,4,FALSE,FALSE,0,Y
+'the seat of Cook County','Its metropolitan area',3,2,1,6,FALSE,FALSE,0,N
+'the seat of Cook County','Cook County',3,3,1,9,TRUE,FALSE,0,Y
+'the seat of Cook County','DuPage County',3,3,1,10,TRUE,FALSE,0,Y
+'the seat of Cook County','a small part of the city',3,3,1,12,TRUE,FALSE,0,N
+'the seat of Cook County','a city in 1837',3,4,1,15,FALSE,FALSE,0,N
+'the seat of Cook County',1837.0,3,4,1,16,FALSE,FALSE,0,Y
+'the seat of Cook County','an alpha + global city',3,5,1,18,FALSE,FALSE,0,N
+'the seat of Cook County','an alpha',3,5,1,19,FALSE,FALSE,0,Y
+'the seat of Cook County','Second City',3,6,1,20,FALSE,FALSE,0,N
+'the seat of Cook County','The best-known nicknames for the city',3,6,1,21,FALSE,FALSE,0,N
+'the seat of Cook County','Windy City and Second City',3,6,1,23,FALSE,FALSE,0,N
+'the seat of Cook County','Windy City',3,6,1,24,FALSE,FALSE,0,N
+'the seat of Cook County','the fastest growing city in the world for several decades',3,7,1,26,FALSE,FALSE,0,N
+'the seat of Cook County','The City of Chicago',3,7,1,26,FALSE,FALSE,0,N
+'the seat of Cook County','the world for several decades',3,7,1,28,FALSE,FALSE,0,Y
+'the seat of Cook County','several decades',3,7,1,29,FALSE,FALSE,0,Y
+'the third most populous city in the United States',Chicagoland,1,2,1,1,FALSE,TRUE,11,Y
+'the third most populous city in the United States',Chicago,1,7,1,1,FALSE,TRUE,11,Y
+'the third most populous city in the United States','the city',1,6,1,1,FALSE,TRUE,11,Y
+'the third most populous city in the United States',third,1,1,1,2,TRUE,FALSE,0,Y
+'the third most populous city in the United States','the United States',1,1,1,4,TRUE,FALSE,0,Y
+'the third most populous city in the United States','Its metropolitan area',1,2,1,6,FALSE,FALSE,0,Y
+'the third most populous city in the United States','Cook County',1,3,1,9,FALSE,FALSE,0,Y
+'the third most populous city in the United States','DuPage County',1,3,1,10,FALSE,FALSE,0,Y
+'the third most populous city in the United States','a small part of the city',1,3,1,12,FALSE,FALSE,0,N
+'the third most populous city in the United States','a city in 1837',1,4,1,15,FALSE,FALSE,0,N
+'the third most populous city in the United States',1837.0,1,4,1,16,FALSE,FALSE,0,Y
+'the third most populous city in the United States','an alpha + global city',1,5,1,18,FALSE,FALSE,0,N
+'the third most populous city in the United States','an alpha',1,5,1,19,FALSE,FALSE,0,Y
+'the third most populous city in the United States','Second City',1,6,1,20,FALSE,FALSE,0,N
+'the third most populous city in the United States','The best-known nicknames for the city',1,6,1,21,FALSE,FALSE,0,Y
+'the third most populous city in the United States','Windy City and Second City',1,6,1,23,FALSE,FALSE,0,N
+'the third most populous city in the United States','Windy City',1,6,1,24,FALSE,FALSE,0,N
+'the third most populous city in the United States','the fastest growing city in the world for several decades',1,7,1,26,FALSE,FALSE,0,N
+'the third most populous city in the United States','The City of Chicago',1,7,1,26,FALSE,FALSE,0,N
+'the third most populous city in the United States','the world for several decades',1,7,1,28,FALSE,FALSE,0,Y
+'the third most populous city in the United States','several decades',1,7,1,29,FALSE,FALSE,0,Y
+Chicagoland,Chicago,2,7,1,1,FALSE,TRUE,11,Y
+Chicagoland,'the city',2,6,1,1,FALSE,TRUE,11,Y
+Chicagoland,third,2,1,1,2,FALSE,FALSE,0,Y
+Chicagoland,'the United States',2,1,1,4,FALSE,FALSE,0,Y
+Chicagoland,'Its metropolitan area',2,2,1,6,TRUE,FALSE,0,Y
+Chicagoland,'Cook County',2,3,1,9,FALSE,FALSE,0,Y
+Chicagoland,'DuPage County',2,3,1,10,FALSE,FALSE,0,Y
+Chicagoland,'a small part of the city',2,3,1,12,FALSE,FALSE,0,N
+Chicagoland,'a city in 1837',2,4,1,15,FALSE,FALSE,0,N
+Chicagoland,1837.0,2,4,1,16,FALSE,FALSE,0,Y
+Chicagoland,'an alpha + global city',2,5,1,18,FALSE,FALSE,0,N
+Chicagoland,'an alpha',2,5,1,19,FALSE,FALSE,0,Y
+Chicagoland,'Second City',2,6,1,20,FALSE,FALSE,0,N
+Chicagoland,'The best-known nicknames for the city',2,6,1,21,FALSE,FALSE,0,Y
+Chicagoland,'Windy City and Second City',2,6,1,23,FALSE,FALSE,0,N
+Chicagoland,'Windy City',2,6,1,24,FALSE,FALSE,0,N
+Chicagoland,'the fastest growing city in the world for several decades',2,7,1,26,FALSE,FALSE,0,N
+Chicagoland,'The City of Chicago',2,7,1,26,FALSE,FALSE,0,N
+Chicagoland,'the world for several decades',2,7,1,28,FALSE,FALSE,0,Y
+Chicagoland,'several decades',2,7,1,29,FALSE,FALSE,0,Y
+Chicago,'the city',7,6,1,1,FALSE,TRUE,11,Y
+Chicago,third,7,1,1,2,FALSE,FALSE,0,Y
+Chicago,'the United States',7,1,1,4,FALSE,FALSE,0,Y
+Chicago,'Its metropolitan area',7,2,1,6,FALSE,FALSE,0,N
+Chicago,'Cook County',7,3,1,9,FALSE,FALSE,0,Y
+Chicago,'DuPage County',7,3,1,10,FALSE,FALSE,0,Y
+Chicago,'a small part of the city',7,3,1,12,FALSE,FALSE,0,N
+Chicago,'a city in 1837',7,4,1,15,FALSE,FALSE,0,N
+Chicago,1837.0,7,4,1,16,FALSE,FALSE,0,Y
+Chicago,'an alpha + global city',7,5,1,18,FALSE,FALSE,0,N
+Chicago,'an alpha',7,5,1,19,FALSE,FALSE,0,Y
+Chicago,'Second City',7,6,1,20,FALSE,FALSE,0,N
+Chicago,'The best-known nicknames for the city',7,6,1,21,FALSE,FALSE,0,Y
+Chicago,'Windy City and Second City',7,6,1,23,FALSE,FALSE,0,N
+Chicago,'Windy City',7,6,1,24,FALSE,FALSE,0,N
+Chicago,'the fastest growing city in the world for several decades',7,7,1,26,TRUE,FALSE,0,N
+Chicago,'The City of Chicago',7,7,1,26,TRUE,FALSE,0,N
+Chicago,'the world for several decades',7,7,1,28,TRUE,FALSE,0,Y
+Chicago,'several decades',7,7,1,29,TRUE,FALSE,0,Y
+'the city',third,6,1,1,2,FALSE,FALSE,0,Y
+'the city','the United States',6,1,1,4,FALSE,FALSE,0,Y
+'the city','Its metropolitan area',6,2,1,6,FALSE,FALSE,0,N
+'the city','Cook County',6,3,1,9,FALSE,FALSE,0,Y
+'the city','DuPage County',6,3,1,10,FALSE,FALSE,0,Y
+'the city','a small part of the city',6,3,1,12,FALSE,FALSE,0,N
+'the city','a city in 1837',6,4,1,15,FALSE,FALSE,0,N
+'the city',1837.0,6,4,1,16,FALSE,FALSE,0,Y
+'the city','an alpha + global city',6,5,1,18,FALSE,FALSE,0,N
+'the city','an alpha',6,5,1,19,FALSE,FALSE,0,Y
+'the city','Second City',6,6,1,20,TRUE,FALSE,0,N
+'the city','The best-known nicknames for the city',6,6,1,21,TRUE,FALSE,0,Y
+'the city','Windy City and Second City',6,6,1,23,TRUE,FALSE,0,N
+'the city','Windy City',6,6,1,24,TRUE,FALSE,0,N
+'the city','the fastest growing city in the world for several decades',6,7,1,26,FALSE,FALSE,0,N
+'the city','The City of Chicago',6,7,1,26,FALSE,FALSE,0,N
+'the city','the world for several decades',6,7,1,28,FALSE,FALSE,0,Y
+'the city','several decades',6,7,1,29,FALSE,FALSE,0,Y
+third,'the United States',1,1,2,4,TRUE,FALSE,0,Y
+third,'Its metropolitan area',1,2,2,6,FALSE,FALSE,0,Y
+third,'Cook County',1,3,2,9,FALSE,FALSE,0,Y
+third,'DuPage County',1,3,2,10,FALSE,FALSE,0,Y
+third,'a small part of the city',1,3,2,12,FALSE,FALSE,0,Y
+third,'a city in 1837',1,4,2,15,FALSE,FALSE,0,Y
+third,1837.0,1,4,2,16,FALSE,FALSE,0,Y
+third,'an alpha + global city',1,5,2,18,FALSE,FALSE,0,Y
+third,'an alpha',1,5,2,19,FALSE,FALSE,0,Y
+third,'Second City',1,6,2,20,FALSE,FALSE,0,Y
+third,'The best-known nicknames for the city',1,6,2,21,FALSE,FALSE,0,Y
+third,'Windy City and Second City',1,6,2,23,FALSE,FALSE,0,Y
+third,'Windy City',1,6,2,24,FALSE,FALSE,0,Y
+third,'the fastest growing city in the world for several decades',1,7,2,26,FALSE,FALSE,0,Y
+third,'The City of Chicago',1,7,2,26,FALSE,FALSE,0,Y
+third,'the world for several decades',1,7,2,28,FALSE,FALSE,0,Y
+third,'several decades',1,7,2,29,FALSE,FALSE,0,Y
+'the United States','Its metropolitan area',1,2,4,6,FALSE,FALSE,0,Y
+'the United States','Cook County',1,3,4,9,FALSE,FALSE,0,Y
+'the United States','DuPage County',1,3,4,10,FALSE,FALSE,0,Y
+'the United States','a small part of the city',1,3,4,12,FALSE,FALSE,0,Y
+'the United States','a city in 1837',1,4,4,15,FALSE,FALSE,0,Y
+'the United States',1837.0,1,4,4,16,FALSE,FALSE,0,Y
+'the United States','an alpha + global city',1,5,4,18,FALSE,FALSE,0,Y
+'the United States','an alpha',1,5,4,19,FALSE,FALSE,0,Y
+'the United States','Second City',1,6,4,20,FALSE,FALSE,0,Y
+'the United States','The best-known nicknames for the city',1,6,4,21,FALSE,FALSE,0,Y
+'the United States','Windy City and Second City',1,6,4,23,FALSE,FALSE,0,Y
+'the United States','Windy City',1,6,4,24,FALSE,FALSE,0,Y
+'the United States','the fastest growing city in the world for several decades',1,7,4,26,FALSE,FALSE,0,Y
+'the United States','The City of Chicago',1,7,4,26,FALSE,FALSE,0,Y
+'the United States','the world for several decades',1,7,4,28,FALSE,FALSE,0,Y
+'the United States','several decades',1,7,4,29,FALSE,FALSE,0,Y
+'Its metropolitan area','Cook County',2,3,6,9,FALSE,FALSE,0,Y
+'Its metropolitan area','DuPage County',2,3,6,10,FALSE,FALSE,0,Y
+'Its metropolitan area','a small part of the city',2,3,6,12,FALSE,FALSE,0,N
+'Its metropolitan area','a city in 1837',2,4,6,15,FALSE,FALSE,0,N
+'Its metropolitan area',1837.0,2,4,6,16,FALSE,FALSE,0,Y
+'Its metropolitan area','an alpha + global city',2,5,6,18,FALSE,FALSE,0,N
+'Its metropolitan area','an alpha',2,5,6,19,FALSE,FALSE,0,Y
+'Its metropolitan area','Second City',2,6,6,20,FALSE,FALSE,0,N
